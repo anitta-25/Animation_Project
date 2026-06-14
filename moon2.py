@@ -125,10 +125,8 @@ while running:
             random.randint(0, HEIGHT//3)
         ])
 
-    # Draw shooting stars using Bresenham
+    #Shooting stars using Bresenham
     for star in shooting_stars[:]:
-
-        # Draw thicker line (2px)
         for i in range(2):
             draw_line_bresenham(star[0], star[1]+i,
                                 star[0]+25, star[1]+6+i,
